@@ -1,111 +1,151 @@
-# E-Mall
+# 🚀 E-Mall
 
-E-Mall is a modern, full-featured e-commerce platform built with the MERN stack. It provides a seamless online shopping experience with robust features such as user authentication, product browsing, shopping cart management, and a secure checkout process.
+<p align="center">
+  <img src="./frontend/public/vite.svg" alt="E-Mall Logo" width="100" />
+</p>
 
-## Table of Contents
+**E-Mall** is a cutting ‑edge, full ‑featured e commerce platform built with the MERN stack. It delivers a seamless, secure shopping experience—featuring user authentication, rich product browsing, dynamic cart management, and a robust checkout flow. Whether you’re a shopper or an admin, E Mall’s intuitive UI and powerful backend have you covered.
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
-## Features
-
-- **User Authentication:** Secure registration and login using JWT.
-- **Product Browsing:** Browse and search through a variety of products.
-- **Product Details:** Detailed product pages with images and reviews.
-- **Shopping Cart:** Add, update, or remove items with ease.
-- **Secure Checkout:** A complete checkout process ensuring transaction security.
-- **Admin Dashboard:** Manage products, orders, and user data (for admin users).
-
-## Technologies Used
-
-- **MongoDB:** NoSQL database for data persistence.
-- **Express:** Server-side framework for building robust APIs.
-- **React:** Front-end library for building a responsive user interface.
-- **Node.js:** JavaScript runtime for server-side logic.
-- **JWT:** For secure user authentication.
-- **Optional:** Redux (or Context API) for state management, CSS frameworks like Bootstrap or Material-UI for styling.
-
-## Installation
-
-Follow these steps to set up the project locally:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/emall.git
-   cd emall
-   ```
-
-2. **Install server dependencies:**
-   ```bash
-   cd server
-   npm install
-   ```
-
-3. **Install client dependencies:**
-   ```bash
-   cd ../client
-   npm install
-   ```
-
-4. **Environment Setup:**
-
-   Create a `.env` file in the `server` directory and add your configuration details:
-   ```env
-   PORT=5000
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   ```
-   *Adjust any other environment variables as needed.*
-
-5. **Running the Application:**
-
-   For development, you can run both the server and client concurrently.
-
-   - **Server:**
-     ```bash
-     cd server
-     npm run dev
-     ```
-   - **Client:**
-     ```bash
-     cd client
-     npm start
-     ```
-
-   The client will typically run on [http://localhost:3000](http://localhost:3000) and the server on [http://localhost:5000](http://localhost:5000).
-
-## Usage
-
-- **User Side:**  
-  - Register or log in to your account.
-  - Browse through products and add them to your cart.
-  - Proceed to checkout and complete your purchase securely.
-
-- **Admin Side:**  
-  - Log in with an admin account.
-  - Access the admin dashboard to add, update, or remove products and manage orders.
-
-## Contributing
-
-Contributions are welcome! To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes and push the branch.
-4. Open a pull request describing your changes.
-
-Please ensure your code follows the project’s style guidelines.
-
-## Contact
-
-For any questions, issues, or feedback, please reach out to:
-
-- **Email:** davesohamm@gmail.com
-- **GitHub:** [davesohamm](https://github.com/davesohamm)
+[![Live Demo](https://img.shields.io/badge/demo-online-green)](https://e-mall-live.vercel.app/) [![YouTube Video](https://img.shields.io/badge/video-tutorial-red)](https://www.youtube.com/watch?v=hpgh2BTtac8)
 
 ---
+
+## 📋 Table of Contents
+
+1. [✨ Features](#✨-features)  
+2. [🛠️ Technologies & Libraries](#🛠️-technologies--libraries)  
+3. [⚙️ Installation](#⚙️-installation)  
+4. [🚀 Usage](#🚀-usage)  
+5. [📞 Contact](#📞-contact)  
+
+---
+
+## ✨ Features
+
+- **Secure Authentication**  
+  Register, log in, and stay authenticated with JWT ‑powered tokens.
+
+- **Product Catalog**  
+  Browse, search, and filter products by category, price, or rating.
+
+- **Product Detail Pages**  
+  High ‑resolution images, customer reviews, and related items suggestions.
+
+- **Shopping Cart**  
+  Add, update, or remove items; view real ‑time totals and taxes.
+
+- **Streamlined Checkout**  
+  Address entry, order summary, and payment processing—all in one flow.
+
+- **Admin Dashboard**  
+  Create, edit, or delete products; manage orders and user accounts.
+
+---
+
+## 🛠️ Technologies & Libraries
+
+### Core Stack
+
+- **MongoDB** – Flexible NoSQL database
+- **Express.js** – Fast, minimalist server framework
+- **React** – Reactive, component ‑based UI library
+- **Node.js** – Scalable JavaScript runtime
+- **JWT** – JSON Web Tokens for stateless auth
+
+### State & Styling
+
+- **Redux** – Centralized state management
+- **Sonner** – Sleek toast notifications
+- **Tailwind CSS** – Utility ‑first styling (optional CSS frameworks: Bootstrap / Material ‑UI)
+
+### File & Media Handling
+
+- **Multer** – Handling `multipart/form-data` for file uploads
+- **Cloudinary API** – Cloud storage & image transformation
+- **Streamifier** – Convert buffers to readable streams
+
+---
+
+## ⚙️ Installation
+
+Follow these steps to run **E-Mall** locally:
+
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/davesohamm/e-mall.git
+   cd e-mall
+   ```
+
+2. **Server Setup**  
+   ```bash
+   cd backend
+   npm install
+   ```
+
+3. **Client Setup**  
+   ```bash
+   cd frontend
+   npm install
+   ```
+
+4. **Configure Environment**  
+   In `server/.env`, add:
+   ```env
+   PORT=9000
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   CLOUDINARY_CLOUD_NAME=your_cloud_name
+   CLOUDINARY_API_KEY=your_api_key
+   CLOUDINARY_API_SECRET=your_api_secret
+   ```
+   Feel free to include any other variables as needed.
+
+5. **Run in Development**  
+   Open two terminals:
+
+   - **Server:**  
+     ```bash
+     cd backend
+     npm run dev
+     ```
+
+   - **Client:**  
+     ```bash
+     cd frontend
+     npm run dev
+     ```
+
+   Visit the app at [http://localhost:5173](http://localhost:5173).
+
+---
+
+## 🚀 Usage
+
+### Shopper
+
+1. Sign up or log in.  
+2. Browse or search products.  
+3. View product details and reviews.  
+4. Add items to your cart.  
+5. Checkout with secure payment.  
+
+### Admin
+
+1. Log in with an admin account.  
+2. Access **Admin Dashboard**.  
+3. Add / update / remove products.  
+4. Manage orders and user profiles.  
+
+---
+
+## 📞 Contact
+
+Have questions or feedback? Reach out:
+
+- ✉️ **Email:** davesohamm@gmail.com  
+- 💻 **GitHub:** [davesohamm](https://github.com/davesohamm)  
+- 📺 **Reference Video:** https://www.youtube.com/watch?v=hpgh2BTtac8  
+- 🌐 **Live Demo:** https://e-mall-live.vercel.app/  
+
+Enjoy exploring and happy coding! 🎉
+
