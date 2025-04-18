@@ -1,5 +1,9 @@
 # 🚀 E-Mall
 
+<p align="center">
+  <img src="./frontend/public/vite.svg" alt="E-Mall Logo" width="100" />
+</p>
+
 **E-Mall** is a cutting ‑edge, full ‑featured e commerce platform built with the MERN stack. It delivers a seamless, secure shopping experience—featuring user authentication, rich product browsing, dynamic cart management, and a robust checkout flow. Whether you’re a shopper or an admin, E Mall’s intuitive UI and powerful backend have you covered.
 
 [![Live Demo](https://img.shields.io/badge/demo-online-green)](https://e-mall-live.vercel.app/) [![YouTube Video](https://img.shields.io/badge/video-tutorial-red)](https://www.youtube.com/watch?v=hpgh2BTtac8)
