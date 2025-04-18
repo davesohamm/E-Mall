@@ -124,7 +124,7 @@ router.delete("/", async (req, res) => {
     try {
         let cart = await getCart(userId, guestId);
 
-        if (!cart) return res.status(404).json({message: "Cart not founf."});
+        if (!cart) return res.status(404).json({message: "Cart not found."});
 
         const productIndex = cart.products.findIndex((p) => p.productId.toString() === productId && p.size === size && p.color === color);
 

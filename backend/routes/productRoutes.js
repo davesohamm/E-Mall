@@ -172,7 +172,7 @@ router.get("/", async (req, res) => {
             query.brand = {$in: brand.split(",")};
         }
         if (size) {
-            query.size = {$in: size.split(",")};
+            query.sizes = {$in: size.split(",")};
         }
 
         if (color) {
@@ -228,6 +228,7 @@ router.get("/", async (req, res) => {
 // @access Public
 router.get("/best-seller", async (req, res) => {
     try {
+        
         const bestSeller = await Product.findOne().sort({rating: -1});
         if (bestSeller) {
             res.json(bestSeller);
@@ -235,7 +236,9 @@ router.get("/best-seller", async (req, res) => {
             res.status(404).json({message: "No best-seller found."});
         }
     } catch (error) {
+        
         console.error(error);
+        
         res.status(500).send("Server Error");     
     }
 });

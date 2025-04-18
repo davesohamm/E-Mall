@@ -12,10 +12,12 @@ const SortOptions = () => {
 
   return (
     <div className="mb-4 flex items-center justify-end">
-        <select id="sort" 
-        onChange={handleSortChange}
-        value={searchParams.get("sortBy" || "")}
-        className="border p-2 rounded-md focus:outline-none">
+              <select
+                id="sort"
+                onChange={handleSortChange}
+                value={searchParams.get("sortBy") || ""}
+                className="border p-2 rounded-md focus:outline-none"
+              >
             <option value="" className="">Default</option>
             <option value="priceAsc" >Price: Low to High</option>
             <option value="priceDesc"> Price: High to Low</option>
