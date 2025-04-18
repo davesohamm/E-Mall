@@ -26,16 +26,16 @@ const Footer = () => {
         <h3 className="text-lg text-gray-800 mb-4">Shop</h3>
         <ul className="space-y-2 text-gray-600">
           <li>
-            <Link to="#" className="hover:text-gray-500 transition-colors">Men's Top Wear</Link>
+            <Link to="collections/all?gender=Men" className="hover:text-gray-500 transition-colors">Men's Top Wear</Link>
           </li>
           <li>
-            <Link to="#" className="hover:text-gray-500 transition-colors">Women's Top Wear</Link>
+            <Link to="collections/all?gender=Women" className="hover:text-gray-500 transition-colors">Women's Top Wear</Link>
           </li>
           <li>
-            <Link to="#" className="hover:text-gray-500 transition-colors">Men's Bottom Wear</Link>
+            <Link to="collections/all?category=Top Wear" className="hover:text-gray-500 transition-colors">Men's Bottom Wear</Link>
           </li>
           <li>
-            <Link to="#" className="hover:text-gray-500 transition-colors">Women's Bottom Wear</Link>
+            <Link to="collections/all?category=Bottom Wear" className="hover:text-gray-500 transition-colors">Women's Bottom Wear</Link>
           </li>
         </ul>
       </div>
@@ -44,16 +44,16 @@ const Footer = () => {
         <h3 className="text-lg text-gray-800 mb-4">Support</h3>
         <ul className="space-y-2 text-gray-600">
           <li>
-            <Link to="#" className="hover:text-gray-500 transition-colors">Contact us</Link>
+            <Link to="contact-me" className="hover:text-gray-500 transition-colors">Contact me</Link>
           </li>
           <li>
-            <Link to="#" className="hover:text-gray-500 transition-colors">About us</Link>
+            <Link to="about-me" className="hover:text-gray-500 transition-colors">About me</Link>
           </li>
           <li>
-            <Link to="#" className="hover:text-gray-500 transition-colors">FAQs</Link>
+            <Link to="faq" className="hover:text-gray-500 transition-colors">FAQs</Link>
           </li>
           <li>
-            <Link to="#" className="hover:text-gray-500 transition-colors">Features</Link>
+            <Link to="features" className="hover:text-gray-500 transition-colors">Features</Link>
           </li>
         </ul>
       </div>

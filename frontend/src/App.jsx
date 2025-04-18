@@ -21,6 +21,10 @@ import OrderManagement from "./components/Admin/OrderManagement";
 import {Provider} from "react-redux";
 import store from "./redux/store";
 import ProtectedRoute from "./components/Common/ProtectedRoute";
+import FaqPage from "./pages/FaqPage";
+import ContactUsPage from "./pages/ContactUsPage";
+import FeaturesPage from "./pages/FeaturesPage";
+import AboutUsPage from "./pages/AboutUsPage";
 
 const App = () => {
   return (
@@ -39,6 +43,11 @@ const App = () => {
           <Route path="order-confirmation" element={<OrderConfirmationPage />} />
           <Route path="order/:id" element={<OrderDetailsPage />} />
           <Route path="my-orders" element={<MyOrdersPage />} />
+          <Route path="faq" element={<FaqPage />} />
+          <Route path="contact-me" element={<ContactUsPage />} />
+          <Route path="features" element={<FeaturesPage />} />
+          <Route path="about-me" element={<AboutUsPage />} />
+
         </Route>  
         {/* Home */}
         {/* Products */}
