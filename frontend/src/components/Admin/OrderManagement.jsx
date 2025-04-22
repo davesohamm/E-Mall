@@ -44,10 +44,8 @@ const OrderManagement = () => {
                     {orders.length > 0 ? (
                         orders.map((order) => (
                             <tr key={order._id} className="border-b hover:bg-gray-50 cursor-pointer">
-                                <td className="py-4 px-4 font-medium text-gray-900 whitespace-nowrap">
-                                    #{order._id}
-                                </td>
-                                <td className="p-4">{order.user.name}</td>
+                                <td className="py-4 px-4 font-medium text-gray-900 whitespace-nowrap">#{order._id}</td>
+                                <td className="p-4">{order.user ? order.user.name : 'Unknown'}</td>
                                 <td className="p-4">{order.totalPrice.toFixed(2)}</td>
                                 <td className="p-4">
                                     <select value={order.status} onChange={(e) => handleStatusChange(order._id, e.target.value)} 
